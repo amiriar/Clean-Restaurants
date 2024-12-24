@@ -1,8 +1,9 @@
-﻿namespace Clean_Restaurants.Domain.Entities
+﻿using Clean_Restaurants.Domain.Entities.Common;
+
+namespace Clean_Restaurants.Domain.Entities
 {
-    public class Restaurant
+    public class Restaurant: BaseEntity<Guid>
     {
-        public Guid Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public string Category { get; set; }
