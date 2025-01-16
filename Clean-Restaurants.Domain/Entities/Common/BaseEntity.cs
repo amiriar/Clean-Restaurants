@@ -10,6 +10,10 @@ namespace Clean_Restaurants.Domain.Entities.Common
     {
         public T Id { get; set; }
         public bool IsDeleted { get; set; }
-        public bool DeletedBy { get; set; }
+        public Guid? DeletedBy { get; set; }
+
+        public DateTime CreateAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
+        public Guid? UpdatedBy { get; set; }
     }
 }
